@@ -1,13 +1,14 @@
+/* MyToken Smart Contract Explanation
+1. Overview
+   The MyToken contract is an implementation of the ERC20 standard with additional functionalities for token minting, burning, and ownership management. 
+   It demonstrates core ERC20 functions along with custom extensions for comprehensive token management. */
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.9.2/contracts/token/ERC20/ERC20.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.9.2/contracts/access/Ownable.sol";
 
-/* MyToken Smart Contract Explanation
-1. Overview
-   The MyToken contract is an implementation of the ERC20 standard with additional functionalities for token minting, burning, and ownership management. 
-   It demonstrates core ERC20 functions along with custom extensions for comprehensive token management. */
 
 contract MyToken is ERC20, Ownable {
     constructor() ERC20("MyToken", "MTK") {
